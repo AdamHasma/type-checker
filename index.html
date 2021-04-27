@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project: </title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <section class="options">
+        <h2>
+          Type Checker
+        </h2>
+
+        <!-- <div style="margin-top: 40px" class="option">
+          <label for="sentence">Your Text</label>
+          <input type="text" name="sentence" value="The quick brown fox jumps over the lazy dog">
+        </div> -->
+
+        <div style="margin-top: 40px" class="option">
+          <label>Type Size <span>64px</span></label>
+          <input type="range" name="typesize" value=64 min=12 max="200">
+        </div>
+        <div class="option">
+          <label for="lineheight">Line Height <span>115%</span></label>
+          <input type="range" name="lineheight" value=115 min=70 max="200">
+        </div>
+        <div class="option">
+          <label for="letterspacing">Letter Spacing <span>0px</span></label>
+          <input type="range" name="letterspacing" value=0 min=-4 max="4" step="0.1">
+        </div>
+        <div class="option">
+          <label for="fontweight">Font Weight <span>400</span></label>
+          <input type="range" name="fontweight" value=400 min=100 max="900" step="100">
+        </div>
+
+        <div style="margin-top: 40px" class="option option-checkbox">
+          <label for="italic">Italic</label>
+          <input type="checkbox" name="italic">
+        </div>
+        <div class="option option-checkbox">
+          <label for="uppercase">Uppercase</label>
+          <input type="checkbox" name="uppercase">
+        </div>
+        <div style="margin-top: 40px" class="option">
+          <label for="typeface">Typeface</label>
+          <select name="typeface">
+            <option value="Archivo">Archivo</option>
+            <option value="Grandstander">Grandstander</option>
+            <option value="Texturina">Texturina</option>
+            <option value="Tomorrow">Tomorrow</option>
+          </select>
+        </div>
+
+        <div style="margin-top: 40px" class="option">
+          <label>Colors</label>
+          <div class="colors">
+            <div style="background-color: #2a2a2a; color: white;" class="selected">a</div>
+            <div class="white-tag" style="background-color: white; color: #2a2a2a;">a</div>
+            <div style="background-color: #63ff03; color: #2a2a2a;">a</div>
+            <div style="background-color: #ee0073; color: white;">a</div>
+          </div>
+        </div>
+      </section>
+
+      <textarea class="output">The quick brown fox jumps over the lazy dog</textarea>
+
+    </div>
+
+
+    <script src="main.js"></script>
+  </body>
+</html>

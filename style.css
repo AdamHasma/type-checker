@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Grandstander:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Texturina:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "faune";
+  src: url("assets/faune-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "faune";
+  src: url("assets/faune-italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "faune";
+  src: url("assets/faune-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "faune";
+  margin: 0 0 0 280px;
+  background-color: #2a2a2a;
+  color: white;
+  overflow-y: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+select {
+  width: 100%;
+  padding: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+label span {
+  float: right;
+  font-style: italic;
+}
+
+input[type=range] {
+  width: 100%;
+  margin: 0;
+}
+
+input[type=text] {
+  padding: 10px;
+  width: 100%;
+  background-color: #575757;
+  border: none;
+  color: white;
+}
+
+input[type=text]:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5), 0 0 0 4px rgba(255, 255, 255, 0.2);
+}
+
+.colors {
+  display: flex;
+  justify-content: space-between;
+}
+.colors > div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2.2;
+  cursor: pointer;
+}
+.colors > div:first-child {
+  border: 1px solid white;
+  line-height: 2;
+}
+.colors div.selected {
+  border: 2px solid white;
+  line-height: 1.95;
+}
+.colors div.selected-black {
+  border: 2px solid #63ff03;
+  line-height: 1.95;
+}
+
+.options {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100vh;
+  background-color: #2a2a2a;
+  padding: 40px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.output {
+  padding: 40px;
+  font-size: 64px;
+  width: 100%;
+  min-height: 100vh;
+  background: none;
+  outline: none;
+  border: none;
+  color: white;
+  font-family: "Archivo";
+}
+
+.option {
+  margin: 10px 0 0;
+}
+
+.option-checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input[type=checkbox] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #575757;
+  outline: none;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type=checkbox]:checked {
+  background-color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
